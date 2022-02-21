@@ -16,19 +16,21 @@
         <h1 class="app-title">Your Weather App</h1>
     </header>
     <main id="main-container">
-        <h2 class="form-title">How's It Lookin</h2>
+        <div class="title-container">
+            <h2 class="form-title">How's It Lookin</h2>
+            <p class="icon"></p>
+        </div>
         <form class="form" id="searchForm">
-            <input 
-                type="text"
-                id="searchInput"
-                class="form-input"
-                placeholder="Enter City Here" />
+            <input type="text" id="searchInput" class="form-input" placeholder="Enter City Here" />
             <button id="searchBtn" class="btn-submit" type="submit">
                 Search
             </button>
         </form>
         <div id="searchResult" class="search-result">
-            testing
+            <h3 id="cityName"></h3>
+            <p id="temperature"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
         </div>
     </main>
     <footer id="footer-container">
